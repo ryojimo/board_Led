@@ -297,7 +297,7 @@ HalLed_Sequence(
     int             i = 0;
     unsigned int    value = 0x1;
 
-    for( i = 0; i < 2; i++ )
+    for( i = 0; i < 26; i++ )
     {
         HalLed_Set( value );
         usleep( 500 * 1000 );
