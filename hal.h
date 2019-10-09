@@ -62,7 +62,6 @@
 EHalBool_t      HalLed_Init( void );
 void            HalLed_Fini( void );
 void            HalLed_Set( unsigned int value );
-void            HalLed_Sequence( void );
 
 
 #endif /* _HAL_H_ */

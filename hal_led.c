@@ -282,32 +282,6 @@ HalLed_Set(
 }
 
 
-/**************************************************************************//*!
- * @brief     LED を順番に点灯する。
- * @attention なし。
- * @note      なし。
- * @sa        なし。
- * @author    Ryoji Morita
- * @return    なし。
- *************************************************************************** */
-void
-HalLed_Sequence(
-    void    ///< [in] ナシ
-){
-    int             i = 0;
-    unsigned int    value = 0x1;
-
-    for( i = 0; i < 26; i++ )
-    {
-        HalLed_Set( value );
-        usleep( 500 * 1000 );
-        value = ( value << 1 ) % 0x03FFFFFF;
-    }
-
-    return;
-}
-
-
 #ifdef __cplusplus
     }
 #endif
